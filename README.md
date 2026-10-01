@@ -1,69 +1,64 @@
-# Trapping Rain Water — Java
+# Java Array Programs & DSA Practice
 
-A Java implementation of the **Trapping Rain Water** problem using the **two-pointer technique**. The program calculates the total amount of rainwater that can be trapped between bars of different heights. This is a common Data Structures and Algorithms problem that focuses on arrays, two pointers, and optimization.
+A collection of Java programs for practicing **arrays and problem-solving techniques**. This repository includes beginner-friendly array operations as well as common coding interview problems involving subarrays, sliding windows, two pointers, and dynamic programming-style techniques.
 
-## Problem Statement
+## 📚 Topics Covered
 
-Given an array of non-negative integers where each element represents the height of a bar and the width of every bar is `1`, calculate how much rainwater can be trapped between the bars after rainfall.
+- Basic array operations and traversal
+- Finding the largest element
+- Concatenating arrays
+- Moving zeros to the end of an array
+- Removing elements from an array
+- Maximum subarray sum using Kadane's algorithm
+- Trapping Rain Water using the two-pointer technique
+- Subarray Product Less Than K
+- Fruit Into Baskets (longest contiguous subarray with at most two distinct values)
+- Fibonacci series practice
+- Sliding-window and string-related problems, including finding anagrams
 
-### Example
+## 🗂️ Programs in This Repository
 
-```text
-Input:
-[0,1,0,2,1,0,1,3,2,1,2,1]
+| Program | Concept |
+| --- | --- |
+| [Largest Element](./largest%20element) | Array traversal |
+| [Concatenation of Array](./concatenation%20of%20array) | Array operations |
+| [Move Zeros to End](./Move%20Zeros%20to%20end%20of%20array) | In-place array manipulation |
+| [Remove Element](./remove%20element) | Array modification |
+| [Maximum Subarray Sum — Kadane's Algorithm](./Max%20subarray%20Sum%20uing%20kadane's%20Algorithm) | Subarray optimization |
+| [Trapping Rain Water](./leetcode%20problem) | Two pointers |
+| [Subarray Product Less Than K](./Subarray%20Product%20Less%20Than%20K) | Sliding window |
+| [Fruit Into Baskets](./Fruit%20Into%20Baskets%20%28longest%20contiguous%20subarray%20containing%20at%20most%202%20distinct%20numbers.%29) | Sliding window |
+| [Find All Anagrams in a String](./find%20a%20all%20anagrams%20in%20string) | String and window techniques |
+| [Fibonacci Series](./Fibonacci%20series) | Iteration and sequence generation |
 
-Output:
-6
-```
+This list highlights selected programs; more solutions may be added as practice continues.
 
-The amount of water trapped depends on the tallest boundaries on the left and right of each position.
+## 🛠️ Technology
 
-## Approach
+- **Language:** Java
+- **Focus:** Data Structures and Algorithms (DSA)
+- **Practice:** Coding exercises and LeetCode-style problems
 
-This solution uses the **two-pointer approach** to solve the problem efficiently.
+## 🎯 Learning Goals
 
-Two pointers are initialized:
+This repository is intended to help me:
+- Strengthen my understanding of arrays and subarrays.
+- Practice two-pointer and sliding-window techniques.
+- Improve algorithmic thinking and code readability.
+- Understand time and space complexity.
+- Build a consistent collection of Java DSA solutions.
 
-* `left` — starts from the beginning of the array.
-* `right` — starts from the end of the array.
-* `leftMax` — stores the maximum height encountered from the left.
-* `rightMax` — stores the maximum height encountered from the right.
+## ▶️ How to Run
 
-At every step, the pointer on the side with the smaller height is processed. If the current height is lower than the maximum boundary on that side, water can be trapped at that position.
+1. Install a Java Development Kit (JDK).
+2. Open or clone this repository.
+3. Choose a program and inspect its source code.
+4. Compile and run the Java source file using your IDE or terminal. If a file has no `.java` extension, rename or copy it to a suitable `.java` filename before compiling, if needed.
 
-## Algorithm
+## 🤝 Contributions
 
-1. Initialize `left` and `right` pointers.
-2. Initialize `leftMax`, `rightMax`, and `totalWater`.
-3. Compare the heights at the two pointers.
-4. Process the side with the smaller height.
-5. Update the corresponding maximum height.
-6. Calculate and add trapped water when the current bar is lower than the maximum.
-7. Continue until the two pointers meet.
-8. Return the total trapped water.
+This is a personal learning repository. Suggestions, improvements, and additional problem solutions are welcome.
 
-## Complexity
+---
 
-| Complexity | Value    |
-| ---------- | -------- |
-| Time       | **O(n)** |
-| Space      | **O(1)** |
-
-The two-pointer method achieves linear time while using constant extra space, making it more memory-efficient than approaches that store left/right maximum arrays.
-
-## Technologies
-
-* Java
-* Arrays
-* Two-Pointer Technique
-* Data Structures & Algorithms
-
-## Learning Outcomes
-
-Through this problem, I practiced:
-
-* Array traversal
-* Two-pointer technique
-* Maintaining running maximum values
-* Optimizing time and space complexity
-* Solving an array-based DSA problem efficiently
+**Happy Coding!** 🚀
